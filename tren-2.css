@@ -1,0 +1,410 @@
+@keyframes moverTren {
+    0% {
+        left: -150px;
+    }
+
+    100% {
+        left: calc(100% + 150px);
+    }
+}
+
+.tren2 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #87CEEB, #1E90FF);
+    border: solid;
+}
+
+#paisaje {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.vias-clasico {
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(50%);
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(90deg, #c07d46 0, #684e2d 30px, #000 30px, #000 31px);
+}
+
+.tren-clasico {
+    position: absolute;
+    top: calc(87% - 75px);
+    left: -150px;
+    width: 250px;
+    height: 100px;
+    background: #a52a2a;
+    animation: moverTren 15s linear infinite;
+    z-index: 3;
+}
+
+.tren-clasico-parte {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background: #ffb350;
+    z-index: 3;
+}
+
+.tren-clasico-parte2 {
+    position: absolute;
+    top: -130px;
+    left: -20px;
+    width: 140px;
+    height: 30px;
+    border-radius: 50% 50% 0% 0%;
+    background: #add8e6;
+    z-index: 3;
+}
+
+.tren-clasico-parte3 {
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    background: rgba(114, 114, 114, 0.781);
+    border: #888888 solid;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.tren-clasico-parte4 {
+    position: absolute;
+    top: -60px;
+    left: 180px;
+    width: 50px;
+    height: 60px;
+    background: #9e9e9e;
+    z-index: 3;
+}
+/* -------humo------ */
+.humo {
+    position: absolute;
+    left: 170px;
+    top:-110px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    width: 50px;
+    height: 50px;
+    background: #e1e1e1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    animation-name: humo;
+     animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    &:nth-child(1) {
+        width: 50px;
+        height: 50px;
+        animation-delay: 0.7s;
+    }
+}
+
+@keyframes humo {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -150px;
+        opacity: 0;
+        left: -80%;
+        width: 30px;
+        height: 30px;
+    }
+}
+/* -------humo fin------ */
+.tren-clasico-parte5 {
+    position: absolute;
+    top: -60px;
+    left: 170px;
+    width: 70px;
+    height: 10px;
+    background: #9e9e9e;
+    border-radius: 10%;
+    z-index: 3;
+}
+
+.tren-clasico-parte6 {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 10px;
+    height: 60px;
+    background: #942626;
+    border-radius: 0% 40% 40% 0%;
+    z-index: 3;
+}
+
+@keyframes movimientoOblicuo {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(20px, -20px);
+    }
+
+    50% {
+        transform: translate(40px, 0px);
+    }
+
+    75% {
+        transform: translate(20px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.tren-clasico-parte7 {
+    animation: movimientoOblicuo 12s ease-in-out infinite;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 200px;
+    height: 10px;
+    background: #7a7a7a;
+    z-index: 3;
+}
+
+.rueda {
+    position: absolute;
+    bottom: -25px;
+    width: 75px;
+    height: 75px;
+    background: #8B4513;
+    border-radius: 50%;
+    left: 10px;
+}
+
+.rueda2 {
+    position: absolute;
+    bottom: -25px;
+    width: 75px;
+    height: 75px;
+    left: 160px;
+    background: #8B4513;
+    border-radius: 50%;
+}
+
+
+.arbol {
+    position: absolute;
+    bottom: 0;
+    bottom: 15px;
+    width: 20px;
+    height: 100px;
+    background: #8B4513;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.copa {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background: rgb(60, 128, 33);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+}
+
+.izq {
+    left: 100px;
+
+}
+
+.der {
+    left: 1150px;
+}
+
+.copa.der {
+    bottom: 55px;
+}
+
+.sol {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    background: #FFD700;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.suelo2 {
+    width: 100%;
+    height: 100000px;
+    z-index: 1;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    background: #00500b;
+}
+
+@keyframes moverNube {
+    0% {
+        margin-left: -100px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.nube {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 50px;
+    animation: moverNube 12s linear infinite;
+    z-index: 1;
+}
+
+.nube2 {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 50px;
+    top: -160px;
+    right: -190px;
+    animation: moverNube 20s linear infinite;
+
+    z-index: 1;
+}
+
+.nube3 {
+    position: relative;
+    width: 30px;
+    height: 60px;
+    background: #fdfdfd;
+    border-radius: 50px;
+    margin: 50px;
+    bottom: 0px;
+    right: -290px;
+    z-index: 1;
+    animation: moverNube 29s linear infinite;
+}
+
+.circulo {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.circulo1 {
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 60px;
+}
+
+.circulo2 {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 80px;
+}
+
+.circulo3 {
+    width: 80px;
+    height: 65px;
+    top: 10px;
+    left: -10px;
+}
+
+.circulo4 {
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: 60px;
+
+}
+
+.circulo5 {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: 20px;
+}
+
+.chica1 {
+    width: 80%;
+    height: 40%;
+
+    top: 70%;
+    left: 60%;
+
+    z-index: 1;
+}
+
+.chica2 {
+    width: 90%;
+    height: 40%;
+    top: 50%;
+    left: 80%;
+
+
+    z-index: 1;
+}
+
+.chica3 {
+    width: 150%;
+    height: 100%;
+    top: 15%;
+    left: -30%;
+
+    z-index: 1;
+}
+
+.chica4 {
+    width: 150%;
+    height: 60%;
+
+    top: 20%;
+    left: 30%;
+
+
+    z-index: 1;
+}
+
+.chica5 {
+    width: 180%;
+    height: 70%;
+    top: 30%;
+    left: -59%;
+
+
+    z-index: 1;
+}

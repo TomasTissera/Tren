@@ -1,0 +1,285 @@
+@keyframes moverTren {
+    0% {
+        left: -150px;
+    }
+
+    100% {
+        left: calc(100% + 150px);
+    }
+}
+
+
+.tren1{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #87CEEB, #1E90FF);
+    border: solid;
+}
+#paisaje {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.vias {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(90deg, #c2b280 0, #c2b280 30px, #000 30px, #000 31px);
+}
+
+.tren {
+    position: absolute;
+    top: calc(45% - 75px);
+    left: -150px;
+    width: 400px;
+    height: 100px;
+    border-top-right-radius: 40% 100%;
+    background: #a52a2a;
+    animation: moverTren 4s linear infinite;
+}
+
+.ventana {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 40px;
+    height: 50px;
+    background: #add8e6;
+}
+
+.ventana2 {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    width: 40px;
+    height: 50px;
+    background: #add8e6;
+}
+
+.ventana3 {
+    position: absolute;
+    top: 25px;
+    left: 130px;
+    width: 40px;
+    height: 50px;
+    background: #add8e6;
+}
+
+.ventana4 {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    width: 40px;
+    height: 50px;
+    background: #add8e6;
+}
+
+.ventana5 {
+    position: absolute;
+    top: 25px;
+    left: 230px;
+    width: 40px;
+    height: 50px;
+    background: #add8e6;
+}
+
+
+
+.arbol {
+    position: absolute;
+    bottom: 0;
+    bottom: 15px;
+    width: 20px;
+    height: 100px;
+    background: #8B4513;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.copa {
+    position: absolute;
+    bottom: 50px;
+    z-index: 5;
+    border-radius: 100%;
+    width: 1000px;
+    height: 1000px;
+    background: rgb(60, 128, 33);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+}
+
+.izq {
+    left: 100px;
+
+}
+
+.der {
+    left: 1150px;
+}
+
+.copa.der {
+    bottom: 55px;
+}
+
+.sol {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    background: #FFD700;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.suelo {
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 10%;
+    background: #00500b;
+}
+
+@keyframes moverNube {
+    0% {
+        margin-left: -100px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.nube {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 50px;
+    animation: moverNube 12s linear infinite;
+    z-index: 1;
+}
+
+.nube2 {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 50px;
+    top: -160px;
+    right: -190px;
+    animation: moverNube 20s linear infinite;
+    
+    z-index: 1;
+}
+
+.nube3 {
+    position: relative;
+    width: 30px;
+    height: 60px;
+    background: #fdfdfd;
+    border-radius: 50px;
+    margin: 50px;
+    bottom: 0px;
+    right: -290px;
+    z-index: 0;
+    animation: moverNube 29s linear infinite;
+}
+
+.circulo {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.circulo1 {
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 60px;
+}
+
+.circulo2 {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 80px;
+}
+
+.circulo3 {
+    width: 80px;
+    height: 65px;
+    top: 10px;
+    left: -10px;
+}
+
+.circulo4 {
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: 60px;
+
+}
+
+.circulo5 {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: 20px;
+}
+
+.chica1 {
+    width: 80%;
+    height: 40%;
+
+    top: 70%;
+    left: 60%;
+}
+
+.chica2 {
+    width: 90%;
+    height: 40%;
+    top: 50%;
+    left: 80%;
+
+}
+
+.chica3 {
+    width: 150%;
+    height: 100%;
+    top: 15%;
+    left: -30%;
+}
+
+.chica4 {
+    width: 150%;
+    height: 60%;
+
+    top: 20%;
+    left: 30%;
+    
+}
+
+.chica5 {
+    width: 180%;
+    height: 70%;
+    top: 30%;
+    left: -59%;
+
+}
